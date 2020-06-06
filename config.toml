@@ -1,5 +1,5 @@
 title = "Início"
-baseURL = ""
+baseURL = "prdm0.netlify.app"
 languageCode = "pt"
 theme = "gohugo-theme-ananke"
 
