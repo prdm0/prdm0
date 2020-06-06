@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prof. Pedro Rafael on Início</title>
-    <link>/</link>
+    <link>https://prdm0.netlify.app/</link>
     <description>Recent content in Prof. Pedro Rafael on Início</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://prdm0.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Falando de R</title>
-      <link>/post/criando-um-postteste/</link>
+      <link>https://prdm0.netlify.app/post/criando-um-postteste/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/criando-um-postteste/</guid>
+      <guid>https://prdm0.netlify.app/post/criando-um-postteste/</guid>
       <description> A linguagem de programação R  </description>
     </item>
     
     <item>
       <title>Contato</title>
-      <link>/contact/</link>
+      <link>https://prdm0.netlify.app/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contact/</guid>
+      <guid>https://prdm0.netlify.app/contact/</guid>
       <description>Ficou com alguma dúvida? Se sim, envie um e-mail para mim e responderei assim que sobrar um tempo.
 O teu nome Endereço de e-mail É necessário um endereço de e-mail.  Mensagem   </description>
     </item>
