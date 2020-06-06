@@ -1,6 +1,6 @@
 ---
 description: "Entre e não repare a bagunça ..."
-featured_image: /images/gohugo-default-sample-hero-image.jpg
+featured_image: /images/me_07.png
 title: 'Prof. Pedro Rafael'
 ---
 
