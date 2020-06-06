@@ -1,6 +1,6 @@
 title = "Início"
 baseURL = "prdm0.netlify.app"
-languageCode = "en-us"
+languageCode = "pt"
 theme = "gohugo-theme-ananke"
 
 MetaDataFormat = "yaml"
@@ -10,6 +10,9 @@ Paginate = 3 # this is set low for demonstrating with dummy content. Set to a hi
 googleAnalytics = ""
 enableRobotsTXT = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[author]
+  name = "Pedro Rafael"
 
 [sitemap]
   changefreq = "monthly"
