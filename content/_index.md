@@ -1,6 +1,7 @@
 ---
-description: The last theme you'll ever need. Maybe.
+description: "Entre e não repare a bagunça ..."
 featured_image: /images/gohugo-default-sample-hero-image.jpg
-title: 'Ananke: a Hugo Theme'
+title: 'Prof. Dr. Pedro Rafael D. Marinho'
 ---
-Welcome to my blog with some of my work in progress. I've been working on this book idea. You can read some of the chapters below.
+
+Bem vindo ao meu website. Aqui você poderá encontar algumas informações sobre o meu trabalho na estatística e informações gerais sobre mim. Você encontrará postagens variadas divididas em postagens que não necessariamente terá relações sobre o mesmo tema.

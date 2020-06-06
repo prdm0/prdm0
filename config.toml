@@ -1,10 +1,10 @@
-title = "Prof. Dr. Pedro Rafael D. Marinho"
+title = "Início"
 baseURL = "https://prdm0.netlify.app/"
 languageCode = "en-us"
 theme = "gohugo-theme-ananke"
 
 MetaDataFormat = "yaml"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "pt"
 SectionPagesMenu = "main"
 Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
@@ -18,12 +18,12 @@ enableRobotsTXT = true
 [params]
   favicon = ""
   site_logo = ""
-  description = "The last theme you'll ever need. Maybe."
+  description = "Aqui você encontrará um pouco do meu trabalho ..."
   facebook = ""
-  twitter = "https://twitter.com/GoHugoIO"
+  twitter = "https://twitter.com/Pedro_Rafael1"
   instagram = ""
   youtube = ""
-  github = ""
+  github = "https://github.com/prdm0"
   gitlab = ""
   linkedin = ""
   mastodon = ""

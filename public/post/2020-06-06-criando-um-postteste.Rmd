@@ -1,0 +1,12 @@
+---
+title: Falando de R
+author: ~
+date: '2020-06-06'
+slug: criando-um-postteste
+categories: []
+tags: []
+description: ''
+featured_image: ''
+---
+
+# A linguagem de programação R
