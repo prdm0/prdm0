@@ -19,6 +19,10 @@ hasCJKLanguage = true
   priority = 0.5
   filename = "sitemap.xml"
 
+#[[menu.main]]
+#    name = "Artigos"
+#    url = "/papers/"
+
 [params]
   favicon = ""
   site_logo = ""
