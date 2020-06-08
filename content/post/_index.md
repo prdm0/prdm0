@@ -1,6 +1,6 @@
 ---
 date: "2017-03-02T12:00:00-05:00"
-featured_image: /images/animacao_DE.gif
+featured_image: /images/animacao_DE_01.gif
 title: Postagens
 ---
 
