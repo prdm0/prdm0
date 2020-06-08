@@ -1,9 +1,9 @@
 ---
 description: ''
-featured_image: "/images/DE_18.png"
+featured_image: "/images/animacao_DE_02.gif"
 title: Sobre mim
 ---
-{{< figure src="/images/me_04.jpg" height="600px" title="Prof. Dr. Pedro Rafael D. Marinho" >}}
+{{< figure src="/images/me_10.png" height="550px" title="Prof. Dr. Pedro Rafael D. Marinho" >}}
 
 
 
