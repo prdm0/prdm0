@@ -1,6 +1,6 @@
 ---
 description: We'd love to hear from you
-featured_image: images/notebook.jpg
+featured_image: images/notebook_animacao.gif
 menu: main
 omit_header_text: true
 title: Contato
