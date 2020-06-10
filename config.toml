@@ -25,7 +25,8 @@ hasCJKLanguage = true
 
 [params]
   favicon = "/images/bullterrier.png"
-  site_logo = ""
+  custom_css = ["css/custom.css"]
+  site_logo = "/images/logo.svg"
   description = "Aqui você encontrará um pouco do meu trabalho ..."
   facebook = ""
   twitter = "https://twitter.com/Pedro_Rafael1"
