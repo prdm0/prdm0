@@ -1,4 +1,4 @@
-title = "Pedro Rafael' Blog"
+title = "Pedro Rafael' Site"
 baseURL = "https://prdm0.rbind.io"
 languageCode = "pt"
 theme = "gohugo-theme-ananke"
@@ -44,3 +44,4 @@ hasCJKLanguage = true
   featured_image = "/images/me_04.jpg"
   recent_posts_number = 1
   toc = true
+  show_reading_time = true
