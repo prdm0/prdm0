@@ -1,4 +1,4 @@
-title = "Início"
+title = "Pedro Rafael' Blog"
 baseURL = "https://prdm0.rbind.io"
 languageCode = "pt"
 theme = "gohugo-theme-ananke"
@@ -6,7 +6,7 @@ theme = "gohugo-theme-ananke"
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "pt"
 SectionPagesMenu = "main"
-googleAnalytics = ""
+googleAnalytics = "UA-169205112-1"
 enableRobotsTXT = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 hasCJKLanguage = true
