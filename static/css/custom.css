@@ -1,18 +1,32 @@
 .cf {
-    text-align: justify;
-    opacity: 1.0;
-    
+  text-align: justify;
+  opacity: 1.0;
+  width: 100%;
+  height: auto;
 }
 
 div {
   opacity: 1.0;
 }
 
+
 a {
   color: hotpink;
 }
 
+/* mouse over link */
+a:hover {
+  color: #cc00cc;
+}
+
+
+
 img {
+  width: 100%;
+  height: auto;
+}
+
+video {
   width: 100%;
   height: auto;
 }
