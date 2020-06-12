@@ -1,3 +1,18 @@
 .cf {
     text-align: justify;
+    opacity: 1.0;
+    
+}
+
+div {
+  opacity: 1.0;
+}
+
+a {
+  color: hotpink;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
