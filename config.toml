@@ -12,7 +12,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 hasCJKLanguage = true
 
 [author]
-  name = "Pedro Rafael"
+  name = "Prof. Pedro Rafael"
 
 [sitemap]
   changefreq = "monthly"
