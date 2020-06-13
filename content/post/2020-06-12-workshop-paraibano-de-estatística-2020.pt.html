@@ -7,7 +7,7 @@ categories:
   - Programação
 tags:
   - R
-description: 'Seminário para o Workshop Paraibano de Estatística'
+description: ''
 featured_image: '/images/florest_01.jpg'
 output:
   blogdown::html_page:
@@ -25,8 +25,8 @@ output:
 </ul>
 </div>
 
-<div id="uso-de-funcionais-em-r-evitando-loops-e-seus-benefícios" class="section level1">
-<h1>Uso de funcionais em R: evitando loops e seus benefícios</h1>
+<div id="uso-de-funcionais-em-r-evitando-loops-e-seus-benefícios" class="section level2">
+<h2>Uso de funcionais em R: evitando loops e seus benefícios</h2>
 <p>Esse ano tive o prazer de ser convidado para apresentar o seminário intitulado <strong>Uso de funcionais em R: evitando loops e seus benefícios</strong> no <strong>Workshop Paraibano de Estatística</strong>, evento este organizado pela Universidade Federal da Paraíba - UFPB, Universidade Fedral de Campina Grande - UFCG e Universidade Estadual da Paraíba - UEPB, em comemoração ao dia do estatístico, 29 de maio. O site oficial do evento poderá ser acessado <a href="https://sites.google.com/view/workshopparaibano/p%C3%A1gina-inicial"><strong>aqui</strong></a>.</p>
 <p>Nesse seminário, apresentei os benefícios de nos aproximarmos do <a href="https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_funcional"><strong>paradígima de programação funcinal</strong></a> ao implementarmos nossos códigos em <a href="https://www.r-project.org/"><strong>R</strong></a>.</p>
 <p>R não é uma linguagem puramente funcional, sendo uma linguagem de programação multiparadigma, em que é possível também programar utilizando o <a href="https://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos"><strong>paradigma de orientação à objeto</strong></a>, em especial usando o sistema <a href="https://prdm0.github.io/aulas_computacional/r-miscel%C3%A2nea-e-t%C3%B3picos-avan%C3%A7ados.html#sistema-s3"><strong>S3</strong></a> de orientação à objeto, em que os métodos são despachados por meio de uma função genérica, com base na estrutura de dados do primeiro argumento dessa função. Para maiores detalhes, você poderá ler a seção <strong>S3</strong> do meu livro de <strong>Estatística Computacional</strong> disponível <a href="https://prdm0.github.io/aulas_computacional/index.html"><strong>aqui</strong></a>, livro este que utilizo para ministrar a disciplina de estatística computacional aos alunos do bacharelado em estatística da UFPB.</p>
@@ -42,8 +42,8 @@ output:
 <p>{{% youtube "rqjII_sA6V8" %}}
 <strong>Seminário apresentado no Workshop Paraibano de Estatística - 2020.</strong></p>
 <p>Abaixo estão os dois códigos implementados no vídeo, em que o primeiro faz uso de paralelismo via FORK, disponíveis em sistemas <a href="https://en.wikipedia.org/wiki/Unix-like"><strong>Unix-like</strong> - <strong>*nix</strong></a> (Linux e Unix) e o segundo disponíveis em <strong>*nix</strong> e em Windows. São discutidas as vantagens e desvantagens de cada um dos sistemas.</p>
-<div id="código-para-paralelização-em-sistemas-linuxmac-paraleliando-via-fork" class="section level2">
-<h2>Código para paralelização em sistemas Linux/Mac (paraleliando via FORK):</h2>
+<div id="código-para-paralelização-em-sistemas-linuxmac-paraleliando-via-fork" class="section level3">
+<h3>Código para paralelização em sistemas Linux/Mac (paraleliando via FORK):</h3>
 <pre class="r"><code>library(numDeriv)
 library(parallel)
 library(pbmcapply)
@@ -129,8 +129,8 @@ mc.reset.stream()
 
 system.time(result &lt;- mc(M = 1000, n = 100, par_true = c(2, 3, 1), cl = cl))</code></pre>
 </div>
-<div id="código-para-paralelização-em-sistema-windows-paraleliando-via-psock" class="section level2">
-<h2>Código para paralelização em sistema Windows (paraleliando via PSOCK):</h2>
+<div id="código-para-paralelização-em-sistema-windows-paraleliando-via-psock" class="section level3">
+<h3>Código para paralelização em sistema Windows (paraleliando via PSOCK):</h3>
 <pre class="r"><code>library(numDeriv)
 library(parallel)
 library(pbapply)

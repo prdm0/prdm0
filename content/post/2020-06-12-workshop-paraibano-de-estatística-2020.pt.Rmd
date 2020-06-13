@@ -7,7 +7,7 @@ categories:
   - Programação
 tags:
   - R
-description: 'Seminário para o Workshop Paraibano de Estatística'
+description: ''
 featured_image: '/images/florest_01.jpg'
 output:
   blogdown::html_page:
@@ -16,7 +16,7 @@ output:
 ---
 
 
-# Uso de funcionais em R: evitando loops e seus benefícios
+## Uso de funcionais em R: evitando loops e seus benefícios
 
 Esse ano tive o prazer de ser convidado para apresentar o seminário intitulado **Uso de funcionais em R: evitando loops e seus benefícios** no **Workshop Paraibano de Estatística**, evento este organizado pela Universidade Federal da Paraíba - UFPB, Universidade Fedral de Campina Grande - UFCG e Universidade Estadual da Paraíba - UEPB, em comemoração ao dia do estatístico, 29 de maio. O site oficial do evento poderá ser acessado [**aqui**](https://sites.google.com/view/workshopparaibano/p%C3%A1gina-inicial).
 
@@ -42,7 +42,7 @@ blogdown::shortcode("youtube", "rqjII_sA6V8")
 
 Abaixo estão os dois códigos implementados no vídeo, em que o primeiro faz uso de paralelismo via FORK, disponíveis em sistemas [**Unix-like** - **\*nix**](https://en.wikipedia.org/wiki/Unix-like) (Linux e Unix) e o segundo disponíveis em **\*nix** e em Windows. São discutidas as vantagens e desvantagens de cada um dos sistemas.
 
-## Código para paralelização em sistemas Linux/Mac (paraleliando via FORK):
+### Código para paralelização em sistemas Linux/Mac (paraleliando via FORK):
 
 ```{r, eval=FALSE}
 library(numDeriv)
@@ -131,7 +131,7 @@ mc.reset.stream()
 system.time(result <- mc(M = 1000, n = 100, par_true = c(2, 3, 1), cl = cl))
 ```
 
-## Código para paralelização em sistema Windows (paraleliando via PSOCK):
+### Código para paralelização em sistema Windows (paraleliando via PSOCK):
 
 ```{r, eval=FALSE}
 library(numDeriv)
