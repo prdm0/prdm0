@@ -7,7 +7,7 @@ categories:
   - Programação
 tags:
   - R
-description: ''
+description: 'Uso de Funcionais em R: evitando loops e seus benefícios'
 featured_image: '/images/florest_01.jpg'
 output:
   blogdown::html_page:
