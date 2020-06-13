@@ -42,7 +42,7 @@ blogdown::shortcode("youtube", "rqjII_sA6V8")
 
 Abaixo estão os dois códigos implementados no vídeo, em que o primeiro faz uso de paralelismo via FORK, disponíveis em sistemas [**Unix-like** - **\*nix**](https://en.wikipedia.org/wiki/Unix-like) (Linux e Unix) e o segundo disponíveis em **\*nix** e em Windows. São discutidas as vantagens e desvantagens de cada um dos sistemas.
 
-### Código para paralelização em sistemas Linux/Mac (paraleliando via FORK):
+### Código para paralelização em sistemas Linux/Mac (paralelizando via FORK):
 
 ```{r, eval=FALSE}
 library(numDeriv)
@@ -131,7 +131,7 @@ mc.reset.stream()
 system.time(result <- mc(M = 1000, n = 100, par_true = c(2, 3, 1), cl = cl))
 ```
 
-### Código para paralelização em sistema Windows (paraleliando via PSOCK):
+### Código para paralelização em sistema Windows (paralelizando via PSOCK):
 
 ```{r, eval=FALSE}
 library(numDeriv)

@@ -34,8 +34,8 @@ output:
 <p>{{% youtube "rqjII_sA6V8" %}}
 <strong>Seminário apresentado no Workshop Paraibano de Estatística - 2020.</strong></p>
 <p>Abaixo estão os dois códigos implementados no vídeo, em que o primeiro faz uso de paralelismo via FORK, disponíveis em sistemas <a href="https://en.wikipedia.org/wiki/Unix-like"><strong>Unix-like</strong> - <strong>*nix</strong></a> (Linux e Unix) e o segundo disponíveis em <strong>*nix</strong> e em Windows. São discutidas as vantagens e desvantagens de cada um dos sistemas.</p>
-<div id="código-para-paralelização-em-sistemas-linuxmac-paraleliando-via-fork" class="section level3">
-<h3>Código para paralelização em sistemas Linux/Mac (paraleliando via FORK):</h3>
+<div id="código-para-paralelização-em-sistemas-linuxmac-paralelizando-via-fork" class="section level3">
+<h3>Código para paralelização em sistemas Linux/Mac (paralelizando via FORK):</h3>
 <pre class="r"><code>library(numDeriv)
 library(parallel)
 library(pbmcapply)
@@ -121,8 +121,8 @@ mc.reset.stream()
 
 system.time(result &lt;- mc(M = 1000, n = 100, par_true = c(2, 3, 1), cl = cl))</code></pre>
 </div>
-<div id="código-para-paralelização-em-sistema-windows-paraleliando-via-psock" class="section level3">
-<h3>Código para paralelização em sistema Windows (paraleliando via PSOCK):</h3>
+<div id="código-para-paralelização-em-sistema-windows-paralelizando-via-psock" class="section level3">
+<h3>Código para paralelização em sistema Windows (paralelizando via PSOCK):</h3>
 <pre class="r"><code>library(numDeriv)
 library(parallel)
 library(pbapply)
