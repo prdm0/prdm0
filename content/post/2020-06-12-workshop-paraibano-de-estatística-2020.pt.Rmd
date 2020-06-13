@@ -39,7 +39,7 @@ blogdown::shortcode("youtube", "rqjII_sA6V8")
 **Seminário apresentado no Workshop Paraibano de Estatística - 2020.**
 
 
-Aconselho que assistam o vídeo, em que apresento, com um pouco mais de detalhes, os benefícios de se aproximar da programação funcional em R, em particular do uso de funcionais. No vídeo implemento um problema típico da estatística que é o desenvolvimento de simulações de Monte-Carlo - MC. No vídeo mostro como é fácil implementar uma simulação de MC de forma serial e paralela em Linux/Mac e Windows. Os códigos encontram-se abaixo:
+No vídeo, apresento com um pouco mais de detalhes, os benefícios de se aproximar da programação funcional em R, em particular troca, se possível, estruturas de loops pelo uso de um funcional conveniente. No vídeo implemento um problema típico da estatística que é o desenvolvimento de simulações de Monte-Carlo - MC e o mostro como é fácil implementar uma simulação de MC de forma serial e paralela em sistemas Linux/Mac e Windows. Os códigos encontram-se abaixo:
 
 ## Código para paralelização em sistemas Linux/Mac (paraleliando via FORK):
 
