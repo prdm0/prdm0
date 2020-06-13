@@ -13,6 +13,7 @@ output:
   blogdown::html_page:
     toc: true
     toc_depth: 1
+    highlight: tango
 ---
 
 
