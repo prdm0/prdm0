@@ -13,7 +13,6 @@ output:
   blogdown::html_page:
     toc: true
     toc_depth: 1
-    highlight: tango
 ---
 
 
@@ -130,6 +129,7 @@ set.seed(0)
 mc.reset.stream()
 
 system.time(result <- mc(M = 1000, n = 100, par_true = c(2, 3, 1), cl = cl))
+
 ```
 
 ### Código para paralelização em sistema Windows (paralelizando via PSOCK):
