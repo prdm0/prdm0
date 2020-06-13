@@ -12,7 +12,7 @@ featured_image: '/images/florest_01.jpg'
 output:
   blogdown::html_page:
     toc: true
-    toc_depth: 3
+    toc_depth: 1
 ---
 
 

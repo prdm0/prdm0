@@ -43,5 +43,4 @@ hasCJKLanguage = true
   background_color_class = "bg-black"
   featured_image = "/images/me_04.jpg"
   recent_posts_number = 3
-  toc = true
   show_reading_time = true
