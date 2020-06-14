@@ -17,12 +17,11 @@ div {
 }
 
 a {
-  color: hotpink;
+  text-decoration: none;
 }
 
-/* mouse over link */
-a:hover {
-  color: #b32d00;
+a:active {
+  color: red;
 }
 
 img {
