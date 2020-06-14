@@ -20,6 +20,14 @@ a {
   text-decoration: none;
 }
 
+a:active {
+  color: #1c6293;
+}
+
+a:hover {
+  color: #1c6293;
+}
+
 img {
   max-width: 100%;
   height: auto;
