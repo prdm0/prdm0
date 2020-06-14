@@ -28,6 +28,10 @@ a:hover {
   color: #0039e6;
 }
 
+/* visited link */
+a:visited {
+  color: #0000b3;
+}
 
 img {
   max-width: 100%;
