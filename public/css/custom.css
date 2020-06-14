@@ -20,10 +20,6 @@ a {
   text-decoration: none;
 }
 
-a:active {
-  color: #0000b3;
-}
-
 img {
   max-width: 100%;
   height: auto;
