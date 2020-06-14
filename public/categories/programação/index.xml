@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programação on Prof. Pedro Rafael</title>
-    <link>/categories/programa%C3%A7%C3%A3o/</link>
+    <link>https://prdm0.rbind.io/categories/programa%C3%A7%C3%A3o/</link>
     <description>Recent content in Programação on Prof. Pedro Rafael</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/programa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://prdm0.rbind.io/categories/programa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Workshop Paraibano de Estatística - 2020</title>
-      <link>/post/workshop-paraibano-de-estat%C3%ADstica-2020/</link>
+      <link>https://prdm0.rbind.io/post/workshop-paraibano-de-estat%C3%ADstica-2020/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/workshop-paraibano-de-estat%C3%ADstica-2020/</guid>
+      <guid>https://prdm0.rbind.io/post/workshop-paraibano-de-estat%C3%ADstica-2020/</guid>
       <description>Uso de funcionais em R: evitando loops e seus benefícios Esse ano tive o prazer de ser convidado para apresentar o seminário intitulado Uso de funcionais em R: evitando loops e seus benefícios no Workshop Paraibano de Estatística, evento este organizado pela Universidade Federal da Paraíba - UFPB, Universidade Fedral de Campina Grande - UFCG e Universidade Estadual da Paraíba - UEPB, em comemoração ao dia do estatístico, 29 de maio.</description>
     </item>
     
