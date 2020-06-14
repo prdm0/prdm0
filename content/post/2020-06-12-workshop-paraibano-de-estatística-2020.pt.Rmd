@@ -33,7 +33,7 @@ Em R, funcional é toda função que recebe como argumento uma outra função e 
 
 Você poderá companhar a apresentação utilizada no seminário pelo seu navegador clicando [**aqui**](https://prdm0.github.io/palestra_wpbest_2020/#1). No vídeo, disposto adiante, apresento com um pouco mais de detalhes os benefícios de aproximar-se da programação funcional em R, em particular discuto a troca, se possível, de estruturas de loops por um funcional conveniente. Nele, implemento um problema típico da estatística que é o desenvolvimento de simulações de Monte-Carlo - MC e mostro como é fácil implementar uma simulação de MC de forma serial e paralela, em sistemas Linux/Mac e Windows. 
 
-Após o vídeo, estão os dois códigos apresentados, em que o primeiro faz uso de paralelismo via FORK, disponíveis em sistemas Unix-like - **\*nix** (Linux e Unix) e o segundo disponíveis em **\*nix** e em Windows. São discutidas as vantagens e desvantagens de cada um dos sistemas. Divirta-se:
+Após o vídeo, estão os dois códigos implementados durante o seminário, em que o primeiro faz uso de paralelismo via FORK, disponíveis em sistemas Unix-like - **\*nix** (Linux e Unix) e o segundo disponíveis em **\*nix** e em Windows. São discutidas as vantagens e desvantagens de cada um dos sistemas. Divirta-se:
 
 ```{r, eval=TRUE, echo=FALSE}
 blogdown::shortcode("youtube", "rqjII_sA6V8")
