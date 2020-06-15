@@ -1,3 +1,8 @@
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.0/styles/night-owl.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.0/highlight.min.js"></script>
+ <script>hljs.initHighlightingOnLoad();</script>
+
 {{ $featured_image := .Params.featured_image }}
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}

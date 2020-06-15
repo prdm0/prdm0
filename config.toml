@@ -25,7 +25,7 @@ hasCJKLanguage = true
 
 [params]
   favicon = "/images/bullterrier.png"
-  custom_css = ["css/custom.css", "css/shades-of-purple.css"]
+  custom_css = ["css/custom.css"]
   site_logo = "/images/logo_04.svg"
   description = "Aqui você encontrará um pouco do meu trabalho ..."
   facebook = ""
@@ -44,6 +44,3 @@ hasCJKLanguage = true
   featured_image = "/images/me_04.jpg"
   recent_posts_number = 2
   show_reading_time = true
-  highlight = true
-  highlightStyle = "default"
-  highlightLanguages = ["r", "go", "haskell", "kotlin", "scala", "swift"]
