@@ -119,7 +119,7 @@ RNGkind(kind = &quot;L&#39;Ecuyer-CMRG&quot;)
 set.seed(0)
 mc.reset.stream()
 
-system.time(result &lt;- mc(M = 1000, n = 100, par_true = c(2, 3, 1), cl = cl))</code></pre>
+system.time(result &lt;- mc(M = 1000L, n = 100L, par_true = c(2, 3, 1), cl = cl))</code></pre>
 </div>
 <div id="código-para-paralelização-em-sistema-windows-paralelizando-via-psock" class="section level3">
 <h3>Código para paralelização em sistema Windows (paralelizando via PSOCK):</h3>
@@ -241,7 +241,7 @@ clusterSetRNGStream(cl = cl, iseed = 1)
 system.time(result &lt;-
               mc(
                 M = 1000L,
-                n = 50,
+                n = 50L,
                 par_true = c(2, 3, 1)
               ))
 stopCluster(cl)</code></pre>
