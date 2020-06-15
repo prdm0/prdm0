@@ -42,8 +42,8 @@ hasCJKLanguage = true
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-black"
   featured_image = "/images/me_04.jpg"
-  recent_posts_number = 1
+  recent_posts_number = 2
   show_reading_time = true
-  highlightjsVersion = "9.11.0"
-  highlightjsCDN = "//cdn.bootcss.com"
-  highlightjsLang = ["r", "yaml"]
+  highlight = true
+  highlightStyle = "default"
+  highlightLanguages = ["r", "go", "haskell", "kotlin", "scala", "swift"]

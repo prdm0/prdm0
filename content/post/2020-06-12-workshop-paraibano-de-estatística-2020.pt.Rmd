@@ -18,7 +18,7 @@ output:
 
 ## Uso de funcionais em R: evitando loops e seus benefícios
 
-Esse ano tive o prazer de ser convidado para apresentar o seminário intitulado **Uso de funcionais em R: evitando loops e seus benefícios** no **Workshop Paraibano de Estatística**, evento este organizado pela Universidade Federal da Paraíba - UFPB, Universidade Fedral de Campina Grande - UFCG e Universidade Estadual da Paraíba - UEPB, em comemoração ao dia do estatístico, 29 de maio. O site oficial do evento poderá ser acessado [**aqui**](https://sites.google.com/view/workshopparaibano/p%C3%A1gina-inicial).
+Esse ano tive o prazer de ser convidado para apresentar o seminário intitulado **Uso de funcionais em R: evitando loops e seus benefícios** no **Workshop Paraibano de Estatística**, evento este organizado pela Universidade Federal da Paraíba - UFPB, Universidade Fedral de Campina Grande - UFCG e Universidade Estadual da Paraíba - UEPB, em comemoração ao dia do estatístico, 29 de maio. O site oficial do evento poderá ser acessado clicando [**aqui**](https://sites.google.com/view/workshopparaibano/p%C3%A1gina-inicial).
 
 Nesse seminário, apresentei os benefícios de nos aproximarmos do [**paradigma de programação funcional**](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_funcional) ao implementarmos nossos códigos em [**R**](https://www.r-project.org/). 
 
