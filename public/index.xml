@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prof. Pedro Rafael</title>
-    <link>https://prdm0.rbind.io/</link>
+    <link>/</link>
     <description>Recent content on Prof. Pedro Rafael</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://prdm0.rbind.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Covid-19 por Estados Brasileiros</title>
-      <link>https://prdm0.rbind.io/post/covid-19-por-estados-brasileiros/</link>
+      <link>/post/covid-19-por-estados-brasileiros/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://prdm0.rbind.io/post/covid-19-por-estados-brasileiros/</guid>
+      <guid>/post/covid-19-por-estados-brasileiros/</guid>
       <description>Essa postagem tem como objetivo apresentar dados atualizados sobre o Covid-19, em que todas as tabelas e gráficos que serão aos poucos introduzidos são atualizados sem intervenção humana. Isso é possível pelo uso de uma Application Programming Interface - API que vem sendo mantida por diversos programadores aqui. Essa API considera dados do Ministério da Saúde, da API CSSEGISandData mantida por mais de 22 mil programadores espalhados pelo mundo e do site Coronavírus Brasil.</description>
     </item>
     
     <item>
       <title>Workshop Paraibano de Estatística - 2020</title>
-      <link>https://prdm0.rbind.io/post/workshop-paraibano-de-estat%C3%ADstica-2020/</link>
+      <link>/post/workshop-paraibano-de-estat%C3%ADstica-2020/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://prdm0.rbind.io/post/workshop-paraibano-de-estat%C3%ADstica-2020/</guid>
+      <guid>/post/workshop-paraibano-de-estat%C3%ADstica-2020/</guid>
       <description>Uso de funcionais em R: evitando loops e seus benefícios Esse ano tive o prazer de ser convidado para apresentar o seminário intitulado Uso de funcionais em R: evitando loops e seus benefícios no Workshop Paraibano de Estatística, evento este organizado pela Universidade Federal da Paraíba - UFPB, Universidade Fedral de Campina Grande - UFCG e Universidade Estadual da Paraíba - UEPB, em comemoração ao dia do estatístico, 29 de maio.</description>
     </item>
     
     <item>
       <title>Contato</title>
-      <link>https://prdm0.rbind.io/contact/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://prdm0.rbind.io/contact/</guid>
+      <guid>/contact/</guid>
       <description>Ficou com alguma dúvida? Se sim, envie um e-mail para mim e responderei assim que sobrar um tempo.
 O teu nome Endereço de e-mail É necessário um endereço de e-mail.  Mensagem   </description>
     </item>
