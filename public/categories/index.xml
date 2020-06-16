@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Prof. Pedro Rafael</title>
-    <link>/categories/</link>
+    <link>https://prdm0.rbind.io/categories/</link>
     <description>Recent content in Categories on Prof. Pedro Rafael</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://prdm0.rbind.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Coronavirus</title>
-      <link>/categories/coronavirus/</link>
+      <link>https://prdm0.rbind.io/categories/coronavirus/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/coronavirus/</guid>
+      <guid>https://prdm0.rbind.io/categories/coronavirus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programação</title>
-      <link>/categories/programa%C3%A7%C3%A3o/</link>
+      <link>https://prdm0.rbind.io/categories/programa%C3%A7%C3%A3o/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/programa%C3%A7%C3%A3o/</guid>
+      <guid>https://prdm0.rbind.io/categories/programa%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     
