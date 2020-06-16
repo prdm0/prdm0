@@ -1,0 +1,25 @@
+---
+title: Covid-19 por Estados Brasileiros
+author: Pedro Rafael D. Marinho
+date: '2020-06-16'
+slug: covid-19-por-estados-brasileiros
+categories:
+  - Coronavirus
+tags:
+  - Coronavirus
+description: 'Coronavirus'
+featured_image: '/images/corona_01.jpg'
+---
+
+Essa postagem tem como objetivo apresentar dados atualizados sobre o Covid-19, em que todas as tabelas e gráficos que serão aos poucos introduzidos são atualizados sem intervenção humana. Isso é possível pelo uso de uma [Application Programming Interface](https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es) - **API** que vem sendo mantida [aqui](https://github.com/devarthurribeiro/covid19-brazil-api). Essa API considera dados do [Ministério da Saúde](http://saude.gov.br/), da API [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19) mantida por mais de 22 mil programadores espalhados pelo mundo e do site [Coronavírus Brasil](https://covid.saude.gov.br/). 
+
+Todas as aplicações colocadas aqui foram implementadas usando a linguagem de programação [R](https://www.r-project.org/) e o pacote [Shiny](https://shiny.rstudio.com/) de R que cria aplições web, normalmente tabelas e gráficos interativos.  Como mencionado anteriormente, tudo será atualizado automaticamente com base em protocolos de troca de dados.
+
+A Tabela adiante apresenta os números atualizados do coronavíruos por estados da federação. Vale salientar que as variáveis **Suspeitos** e **Recuperados** não são confiáveis, uma vez que desde o dia 18 de fevereiro de 2020 o governo apenas disponibiliza o número de casos (variável **Casos** da Tabela) e número de mortes (variável **Mortes** da Tabela). 
+
+Observe como está a situação coronavírus nos estados brasileiros. No campo **procurar** da Tabela, você poderá buscar pela sigla do seu estado. Por padrão são exibidos 10 estados, mas você poderá exibir mais estados alterando o número de linhas. Nas colunas das variáveis, você poderá ordenar os estados com base, por exemplo, na variável **Letalidade** ou qualquer outra variável.
+
+
+```{r, eval=TRUE, echo=FALSE, out.width = "960px"}
+knitr::include_app("https://pedro-rafael.shinyapps.io/covid-19-brasil-estados/", height = "600px")
+```

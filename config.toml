@@ -24,7 +24,7 @@ hasCJKLanguage = true
 #    url = "/papers/"
 
 [params]
-  favicon = "/images/bullterrier.png"
+  favicon = "/images/bullterrierr.png"
   custom_css = ["css/custom.css"]
   site_logo = "/images/logo_04.svg"
   description = "Aqui você encontrará um pouco do meu trabalho ..."

@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Covid-19 por Estados Brasileiros</title>
+      <link>/post/covid-19-por-estados-brasileiros/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/covid-19-por-estados-brasileiros/</guid>
+      <description>Essa postagem tem como objetivo apresentar dados atualizados sobre o Covid-19, em que todas as tabelas e gráficos que serão aos poucos introduzidos são atualizados sem intervenção humana. Isso é possível pelo uso de uma Application Programming Interface - API que vem sendo mantida aqui. Essa API considera dados do Ministério da Saúde, da API CSSEGISandData mantida por mais de 22 mil programadores espalhados pelo mundo e do site Coronavírus Brasil.</description>
+    </item>
+    
+    <item>
       <title>Workshop Paraibano de Estatística - 2020</title>
       <link>/post/workshop-paraibano-de-estat%C3%ADstica-2020/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
