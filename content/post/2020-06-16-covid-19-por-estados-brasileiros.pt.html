@@ -13,9 +13,34 @@ featured_image: '/images/corona_01.jpg'
 
 
 
-<p>Essa postagem tem como objetivo apresentar dados atualizados sobre o Covid-19, em que todas as tabelas e gráficos que serão aos poucos introduzidos são atualizados sem intervenção humana. Isso é possível pelo uso de uma <a href="https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es">Application Programming Interface</a> - <strong>API</strong> que vem sendo mantida por diversos programadores <a href="https://github.com/devarthurribeiro/covid19-brazil-api">aqui</a>. Essa API considera dados do <a href="http://saude.gov.br/">Ministério da Saúde</a>, da API <a href="https://github.com/CSSEGISandData/COVID-19">CSSEGISandData</a> mantida por mais de 22 mil programadores espalhados pelo mundo e do site <a href="https://covid.saude.gov.br/">Coronavírus Brasil</a>.</p>
-<p>Todas as aplicações colocadas aqui foram implementadas usando a linguagem de programação <a href="https://www.r-project.org/">R</a> e o pacote <a href="https://shiny.rstudio.com/">Shiny</a> de R que cria aplicações web, normalmente tabelas e gráficos interativos. Como mencionado anteriormente, tudo será atualizado automaticamente com base em protocolos de troca de dados.</p>
-<p>A Tabela adiante apresenta os números atualizados do coronavírus por estados da federação. Vale salientar que as variáveis <strong>Suspeitos</strong> e <strong>Recuperados</strong> não são confiáveis, uma vez que desde o dia 18 de fevereiro de 2020 o governo apenas disponibiliza o número de casos (variável <strong>Casos</strong> da Tabela) e número de mortes (variável <strong>Mortes</strong> da Tabela). Sendo assim, todas as demais colunas são dados confiáveis segudo os dados oficiais.</p>
-<p>Observe como está a situação coronavírus nos estados brasileiros. No campo <strong>procurar</strong> da Tabela, você poderá buscar pela sigla do seu estado. Por padrão são exibidos 10 estados, mas você poderá exibir mais estados alterando o número de linhas. Nas colunas das variáveis, você poderá ordenar os estados com base, por exemplo, na variável <strong>Letalidade</strong> ou qualquer outra variável.</p>
+<div id="introdução" class="section level2">
+<h2>Introdução</h2>
+<p>Essa postagem tem como objetivo apresentar dados atualizados sobre o Covid-19 no Brasil. Todas as tabelas e gráficos que serão aos poucos introduzidos são atualizados sem intervenção humana. Isso é possível pelo uso de uma <a href="https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es">Application Programming Interface</a> - <strong>API</strong> que vem sendo mantida por diversos programadores <a href="https://github.com/devarthurribeiro/covid19-brazil-api">aqui</a>. Essa <strong>API</strong> considera dados do <a href="http://saude.gov.br/">Ministério da Saúde</a>, da <strong>API</strong> <a href="https://github.com/CSSEGISandData/COVID-19">CSSEGISandData</a>, mantida por mais de 22 mil programadores espalhados pelo mundo e do site <a href="https://covid.saude.gov.br/">Coronavírus Brasil</a>.</p>
+<p>Todas as aplicações colocadas aqui foram implementadas usando a linguagem de programação <a href="https://www.r-project.org/">R</a> e o pacote <a href="https://shiny.rstudio.com/">Shiny</a> de R que cria aplicações web, normalmente tabelas e gráficos interativos. Como mencionado anteriormente, tudo será atualizado automaticamente com base em protocolos de troca de dados e requisições <a href="https://pt.wikipedia.org/wiki/JSON">JavaScript Object Notation - JSON</a>.</p>
+<div id="dados-atualizados-por-estados-brasileiros" class="section level3">
+<h3>Dados atualizados por estados brasileiros</h3>
+<p>A tabela adiante apresenta os números atualizados do coronavírus por estados da federação. Vale salientar que as variáveis <strong>Suspeitos</strong> e <strong>Recuperados</strong> não são confiáveis, uma vez que desde o dia 18 de fevereiro de 2020 o governo apenas disponibiliza o número de casos (variável <strong>Casos</strong> da tabela) e número de mortes (variável <strong>Mortes</strong> da tabela). Sendo assim, todas as demais colunas são dados confiáveis, pois continuam sendo atualizadas pelas fontes oficiais .</p>
+<p>Utilizando a tabela, é possível acompanhar os números do coronavírus nos estados brasileiros. No campo <strong>Procurar</strong>, você poderá buscar pela sigla do seu estado, PB, por exemplo. Por padrão, serão exibidos 10 estados, mas você poderá exibir uma quantidade maior de estados alterando o número de linhas de exibição da tabela. Nas colunas das variáveis, você poderá ordenar os estados com base, por exemplo, na variável <strong>Taxa de Letalidade</strong> que é apresentada em percentual.</p>
 <iframe src="https://pedro-rafael.shinyapps.io/covid-19-brasil-estados/?showcase=0" width="960px" height="600px">
 </iframe>
+</div>
+<div id="dados-atualizados-por-regiões-do-brasil" class="section level3">
+<h3>Dados atualizados por regiões do Brasil</h3>
+<p>Assim como a tabela apresentada na seção anterior, o gráfico de barras apresentado nessa seção também tem suas informações atualizadas automaticamente com base na mesma <strong>API</strong>, em que as informações são dispostas pelas regiões do Brasil:</p>
+<ul>
+<li><p><strong>Região Norte</strong>: composta por 7 (sete) estados: AM, RR, AP, PA, TO, RO e AC;</p></li>
+<li><p><strong>Região Nordeste</strong>: composta por 9 (nove) estados: MA, PI, CE, RN, PE, PB, SE, AL e BA;</p></li>
+<li><p><strong>Região Centro-Oeste</strong>: composta por 3 (três) estados mais o Distrito Federal: MT, MS, GO e DF;</p></li>
+<li><p><strong>Região Sudeste</strong> composta: 4 (quatro) estados: SP, RJ, ES e MG;</p></li>
+<li><p><strong>Região Sul</strong>: composta por 3 (três) estados: PR, RS e SC.</p></li>
+</ul>
+<p>O gráfico é interativo, permitindo que sua composição considere três grupos de informações (filtros), são ele:</p>
+<ul>
+<li><p><strong>Casos</strong>: número de casos confirmados de coronavírus por regiões do Brasil;</p></li>
+<li><p><strong>Óbitos</strong>: número de óbitos registrados por coronavírus por regiões do Brasil;</p></li>
+<li><p><strong>Taxa de Letalidade</strong>: percentual de letalidade por coronavírus pelas regiões do Brasil;</p></li>
+</ul>
+<iframe src="https://pedro-rafael.shinyapps.io/bar_plot_covid_19/?showcase=0" width="1000px" height="600px">
+</iframe>
+</div>
+</div>
