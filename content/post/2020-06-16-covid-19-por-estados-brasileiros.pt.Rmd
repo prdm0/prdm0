@@ -7,8 +7,12 @@ categories:
   - Coronavirus
 tags:
   - Coronavirus
-description: 'Coronavirus'
+description: 'Coronavírus'
 featured_image: '/images/corona_01.jpg'
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
 ---
 
 ## Introdução
@@ -17,7 +21,7 @@ Essa postagem tem como objetivo apresentar dados atualizados sobre o Covid-19 no
 
 Todas as aplicações colocadas aqui foram implementadas usando a linguagem de programação [R](https://www.r-project.org/) e o pacote [Shiny](https://shiny.rstudio.com/) de R que cria aplicações web, normalmente tabelas e gráficos interativos.  Como mencionado anteriormente, tudo será atualizado automaticamente com base em protocolos de troca de dados e requisições [JavaScript Object Notation - JSON](https://pt.wikipedia.org/wiki/JSON).
 
-### Dados atualizados por estados brasileiros
+## Dados atualizados por estados brasileiros
 
 A tabela adiante apresenta os números atualizados do coronavírus por estados da federação. Vale salientar que as variáveis **Suspeitos** e **Recuperados** não são confiáveis, uma vez que desde o dia 18 de fevereiro de 2020 o governo apenas disponibiliza o número de casos (variável **Casos** da tabela) e número de mortes (variável **Mortes** da tabela). Sendo assim, todas as demais colunas são dados confiáveis, pois continuam sendo atualizadas pelas fontes oficiais .
 
@@ -27,7 +31,7 @@ Utilizando a tabela, é possível acompanhar os números do coronavírus nos est
 knitr::include_app("https://pedro-rafael.shinyapps.io/covid-19-brasil-estados/", height = "600px")
 ```
 
-### Dados atualizados por regiões do Brasil
+## Dados atualizados por regiões do Brasil
 
 Assim como a tabela apresentada na seção anterior, o gráfico de barras apresentado nessa seção também tem suas informações atualizadas automaticamente com base na mesma **API**, em que as informações são dispostas pelas regiões do Brasil:
 
@@ -37,11 +41,11 @@ Assim como a tabela apresentada na seção anterior, o gráfico de barras aprese
 
    - **Região Centro-Oeste**: composta por 3 (três) estados mais o Distrito Federal: MT, MS, GO e DF;
 
-   - **Região Sudeste** composta: 4 (quatro) estados: SP, RJ, ES e MG;
+   - **Região Sudeste** composta por 4 (quatro) estados: SP, RJ, ES e MG;
 
    - **Região Sul**: composta por 3 (três) estados: PR, RS e SC.
 
-O gráfico é interativo, permitindo que sua composição considere três grupos de informações (filtros), são ele:
+O gráfico é interativo, permitindo que sua composição considere três grupos de informações, sendo eles:
 
    - **Casos**: número de casos confirmados de coronavírus por regiões do Brasil;
 

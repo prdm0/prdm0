@@ -44,3 +44,4 @@ hasCJKLanguage = true
   featured_image = "/images/me_04.jpg"
   recent_posts_number = 2
   show_reading_time = true
+  toc = true

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coronavirus on Prof. Pedro Rafael</title>
-    <link>/tags/coronavirus/</link>
+    <link>https://prdm0.rbind.io/tags/coronavirus/</link>
     <description>Recent content in Coronavirus on Prof. Pedro Rafael</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
     <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/coronavirus/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://prdm0.rbind.io/tags/coronavirus/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Covid-19 por Estados Brasileiros</title>
-      <link>/post/covid-19-por-estados-brasileiros/</link>
+      <link>https://prdm0.rbind.io/post/covid-19-por-estados-brasileiros/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/covid-19-por-estados-brasileiros/</guid>
+      <guid>https://prdm0.rbind.io/post/covid-19-por-estados-brasileiros/</guid>
       <description>Introdução Essa postagem tem como objetivo apresentar dados atualizados sobre o Covid-19 no Brasil. Todas as tabelas e gráficos que serão aos poucos introduzidos são atualizados sem intervenção humana. Isso é possível pelo uso de uma Application Programming Interface - API que vem sendo mantida por diversos programadores aqui. Essa API considera dados do Ministério da Saúde, da API CSSEGISandData, mantida por mais de 22 mil programadores espalhados pelo mundo e do site Coronavírus Brasil.</description>
     </item>
     
