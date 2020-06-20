@@ -66,7 +66,7 @@ Aqui apresentarei uma aplicação com os dados de Covid-19 por municípios brasi
 > --- [**Brasil.io**](https://brasil.io/home/).
 
 
-A tabela permitirá que você acesse informações sobre o avanço do Covid-19 em seu município, caso haja ao menos uma notificação. Você encontrará o número de casos notificados, número de mortes, população estimada, número de casos por 100 mil habitantes, taxa de mortalidade e a data da última atualização. Selecione o estado de interesse e na baixa procurar, escreva o nome do município.
+A tabela permitirá que você acesse informações sobre o avanço do Covid-19 em seu município, caso haja ao menos uma notificação. Você encontrará o número de casos notificados, número de mortes, população estimada, número de casos por 100 mil habitantes, taxa de mortalidade e a data da última atualização. Selecione o estado de interesse e no campo **Procurar**, escreva o nome do município.
 
 ```{r, eval=TRUE, echo=FALSE, out.width = "970px"}
 knitr::include_app("https://pedro-rafael.shinyapps.io/tabela_municipios/", height = "600px")
