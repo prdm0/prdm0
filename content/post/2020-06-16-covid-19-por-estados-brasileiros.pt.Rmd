@@ -1,5 +1,5 @@
 ---
-title: Covid-19 por Estados Brasileiros
+title: Covid-19 no Brasil
 author: Pedro Rafael D. Marinho
 date: '2020-06-16'
 slug: covid-19-por-estados-brasileiros
@@ -55,4 +55,16 @@ O gráfico é interativo, permitindo que sua composição considere três grupos
 
 ```{r, eval=TRUE, echo=FALSE, out.width = "970px"}
 knitr::include_app("https://pedro-rafael.shinyapps.io/bar_plot_covid_19/", height = "600px")
+```
+
+## Covid-19 por Municípios do Brasil
+
+Aqui apresentarei uma aplicação com os dados de Covid-19 por municípios brasileiros. Essa tabela é atualizada utilizando a **API** fornecida por [**Brasil.io**](https://brasil.io/home/). 
+
+
+*"Graças a uma força-tarefa de 40 voluntários que, diariamente, compilam boletins epidemiológicos das 27 Secretarias Estaduais de Saúde, disponibilizamos uma base de dados com a série histórica de casos e óbitos confirmados por município. Embora essenciais para o planejamento de políticas de contenção do novo coronavírus, os dados municipais não têm sido divulgados pelo Ministério da Saúde. Ainda como parte desse esforço contínuo de fornecer dados úteis relacionados à pandemia, disponibilizamos outras bases estruturadas, como população dos municípios afetados, óbitos suspeitos registrados em cartório etc."* -- [Brasil.io](https://brasil.io/home/).
+
+
+```{r, eval=TRUE, echo=FALSE, out.width = "970px"}
+knitr::include_app("https://pedro-rafael.shinyapps.io/tabela_municipios/", height = "600px")
 ```
