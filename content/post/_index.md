@@ -6,6 +6,6 @@ title: Postagens
 
 **Vamos tomar um café e bater uma prosa? Se sim, sente-se:**
 
-{{< figure src="/images/coffe_01.gif" width="45" height="370" title="Está aqui o seu café e espero que goste ..." >}}
+{{< figure src="/images/coffe_01.gif" width="55" height="120" title="Está aqui o seu café e espero que goste ..." >}}
 
 

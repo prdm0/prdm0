@@ -78,4 +78,15 @@ A tabela abaixo permitirá que você acesse informações sobre o avanço do Cov
 knitr::include_app("https://pedro-rafael.shinyapps.io/tabela_municipios/", height = "600px")
 ```
 
-Se quiser ver a tabela logo acima de forma ampliada, clique [**aqui**](https://pedro-rafael.shinyapps.io/tabela_municipios/)
+## Visualizando tudo em um único lugar
+
+Para facilitar a visualização das estatísticas, criei um [**painel de controle**](https://pedro-rafael.shinyapps.io/shinydashboard/) (um [**dashboard**](https://pedro-rafael.shinyapps.io/shinydashboard/)) que concentram todas as estatísticas dessa postagem. Qualquer outra nova informação a respeito do Covid-19 no Brasil será introduzida nesse dashboard. Você poderá navegar pelas abas laterais e escolher as informações que deseja visualizar. Clique em algum dos links dessa seção para visualizar o [**dashboard**](https://pedro-rafael.shinyapps.io/shinydashboard/) de forma ampliada e em uma nova aba do seu navegador. 
+
+Assim como esse site, o [**dashboard**](https://pedro-rafael.shinyapps.io/shinydashboard/) poderá ser melhor visualizado por uma tela de um computador. Caso esteja visualizando por um smarthopne ou tablet de tela pequena, olhar na horizontal poderá melhorar um pouco a visualização das informações.
+
+
+```{r, eval=TRUE, echo=FALSE, out.width = "970px"}
+knitr::include_app("https://pedro-rafael.shinyapps.io/shinydashboard/", height = "600px")
+```
+
+

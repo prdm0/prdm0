@@ -3,83 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>https://prdm0.rbind.io/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://prdm0.rbind.io/categories/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/tags/coronavirus/</loc>
+    <loc>https://prdm0.rbind.io/tags/coronavirus/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/categories/coronavirus/</loc>
+    <loc>https://prdm0.rbind.io/categories/coronavirus/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/post/covid-19-por-estados-brasileiros/</loc>
+    <loc>https://prdm0.rbind.io/post/covid-19-por-estados-brasileiros/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://prdm0.rbind.io/tags/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/categories/programa%C3%A7%C3%A3o/</loc>
+    <loc>https://prdm0.rbind.io/categories/programa%C3%A7%C3%A3o/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>https://prdm0.rbind.io/tags/r/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/post/workshop-paraibano-de-estat%C3%ADstica-2020/</loc>
+    <loc>https://prdm0.rbind.io/post/workshop-paraibano-de-estat%C3%ADstica-2020/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://prdm0.rbind.io/post/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>https://prdm0.rbind.io/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://prdm0.rbind.io/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
