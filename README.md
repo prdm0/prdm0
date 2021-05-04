@@ -1,4 +1,5 @@
-# About me
+## <img align="left" alt="<---" width="22px" style="padding-top: 0.1em;" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/arrow-left.svg" /> 
+About me
 
 My name is Pedro Rafael Diniz Marinho, [prdm0](https://github.com/prdm0) here on GitHub.
 
@@ -19,4 +20,5 @@ I am interested in the areas of computational statistics, data science and build
 [twitter]: https://twitter.com/Pedro_Rafael1
 [instagram]: https://www.instagram.com/prdm.0
 [spotify]: https://open.spotify.com/playlist/2XvsWAVpQBY2Ks6EZ0tQFU?si=T9aKqeUzQlCKsbaC1fqK5g
+
 
