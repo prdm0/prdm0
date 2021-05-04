@@ -1,12 +1,4 @@
-<link href="//cdn.bootcss.com/highlight.js/10.1.0/styles/night-owl.min.css" rel="stylesheet">
-<script src="//cdn.bootcss.com/highlight.js/10.1.0/highlight.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/10.1.0/languages/r.min.js"></script>
-<script>
-hljs.configure({languages: []});
-hljs.initHighlightingOnLoad();
-</script>
-
-{{ $featured_image := .Params.featured_image }}
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image := (trim $featured_image "/") | absURL }}
