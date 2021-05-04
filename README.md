@@ -1,5 +1,6 @@
-## <img align="left" alt="<---" width="22px" style="padding-top: 0.1em;" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/arrow-left.svg" /> 
-About me
+<img align="left" alt="<---" width="22px" style="padding-top: 0.1em;" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/arrow-left.svg" /> 
+
+## About me
 
 My name is Pedro Rafael Diniz Marinho, [prdm0](https://github.com/prdm0) here on GitHub.
 
