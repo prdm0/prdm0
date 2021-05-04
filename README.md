@@ -15,7 +15,7 @@ I am interested in the areas of computational statistics, data science and build
 [<img align="left" alt="hvornum | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@4.22.0/icons/twitter.svg" />][twitter]
 [<img align="left" alt="hvornum | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@4.22.0/icons/spotify.svg" />][spotify]
 
-[website]: http://python.rip/
+[website]: https://prdm0.rbind.io
 [twitter]: https://twitter.com/Pedro_Rafael1
 [instagram]: https://www.instagram.com/prdm.0
 [spotify]: https://open.spotify.com/playlist/2XvsWAVpQBY2Ks6EZ0tQFU?si=T9aKqeUzQlCKsbaC1fqK5g
