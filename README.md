@@ -8,7 +8,7 @@ I am currently a professor in the [Department of Statistics](https://www.ufpb.br
 
 I am interested in the areas of computational statistics, data science and building applications for statistics.
 
-**Website**: [httsp://prdm0.rbind.io/](httsp://prdm0.rbind.io)
+**Website**: [httsp://prdm0.rbind.io/](https://prdm0.rbind.io)
 
 [<img align="left" alt="hvornum.se" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 [<img align="left" alt="hvornum | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@4.22.0/icons/instagram.svg" />][instagram]
