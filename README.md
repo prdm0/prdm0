@@ -8,5 +8,15 @@ I am currently a professor in the [Department of Statistics](https://www.ufpb.br
 
 I am interested in the areas of computational statistics, data science and building applications for statistics.
 
-
 **Website**: [httsp://prdm0.rbind.io/](httsp://prdm0.rbind.io)
+
+[<img align="left" alt="hvornum.se" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
+[<img align="left" alt="hvornum | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@4.22.0/icons/instagram.svg" />][instagram]
+[<img align="left" alt="hvornum | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@4.22.0/icons/twitter.svg" />][twitter]
+[<img align="left" alt="hvornum | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@4.22.0/icons/spotify.svg" />][spotify]
+
+[website]: http://python.rip/
+[twitter]: https://twitter.com/Pedro_Rafael1
+[instagram]: https://www.instagram.com/prdm.0
+[spotify]: https://open.spotify.com/playlist/2XvsWAVpQBY2Ks6EZ0tQFU?si=T9aKqeUzQlCKsbaC1fqK5g
+
