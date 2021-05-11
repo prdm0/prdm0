@@ -1,0 +1,92 @@
+---
+title: Covid-19 no Brasil
+author: Pedro Rafael D. Marinho
+date: '2020-06-16'
+slug: covid-19-por-estados-brasileiros
+categories:
+  - Coronavirus
+tags:
+  - Coronavirus
+description: 'Coronavírus'
+featured_image: '/images/corona_01.jpg'
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
+---
+
+## Introdução
+
+Essa postagem tem como objetivo apresentar dados atualizados sobre o Covid-19 no Brasil. Todas as tabelas e gráficos que serão aos poucos introduzidos são atualizados sem intervenção humana. Isso é possível pelo uso de uma [Application Programming Interface](https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es) - **API** que vem sendo mantida por diversos programadores [aqui](https://github.com/devarthurribeiro/covid19-brazil-api). Essa **API** considera dados do [Ministério da Saúde](http://saude.gov.br/), da **API** [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19), mantida por mais de 22 mil programadores espalhados pelo mundo e do site [Coronavírus Brasil](https://covid.saude.gov.br/). Para os dados municipais, será utilizado as informações da **API** do site [Brasil.io](https://brasil.io/home/).
+
+Todas as aplicações colocadas aqui foram implementadas usando a linguagem de programação [R](https://www.r-project.org/) e o pacote [Shiny](https://shiny.rstudio.com/) de R que cria aplicações web, normalmente tabelas e gráficos interativos.  Como mencionado anteriormente, tudo será atualizado automaticamente com base em protocolos de troca de dados e requisições [JavaScript Object Notation - JSON](https://pt.wikipedia.org/wiki/JSON).
+
+## Dados atualizados por estados brasileiros
+
+A tabela adiante apresenta os números atualizados do coronavírus por estados da federação. Vale salientar que a **API** também fornece dados de **casos suspeitos** e **recuperados**, mas optei em não colocar na tabela, uma vez que essas variáveis não são mais repassadas desde o dia 18 de fevereiro de 2020 por serem complicadas de serem contabilizadas e repassadas. Os dados oficias apenas disponibilizam o número de casos (variável **Casos** da tabela) e número de mortes (variável **Mortes** da tabela). 
+
+Pela tabela, é possível acompanhar os números do coronavírus nos estados brasileiros. No campo **Procurar**, você poderá buscar pela sigla do seu estado, PB, por exemplo. Por padrão, serão exibidos 10 estados, mas você poderá exibir uma quantidade maior de estados alterando o número de linhas de exibição da tabela. Nas colunas das variáveis, você poderá ordenar os estados com base, por exemplo, na variável **Taxa de Letalidade** que é apresentada em percentual.
+
+
+:::nota
+Tenha cuidado ao considerar as taxas de letalidade nas tabelas e gráficos, principalmente àquelas calculadas para alguns municípios brasileiros. Sabemos que as autoridades de saúde municipais e estaduais não conseguem testar toda a população de um dado local, tornando a subnotificação de casos de Covid-19 uma realidade. Além disso, em municípios que notificaram poucos casos, essas taxas poderão levar a valores que não refletem de forma consistente os cenários verdadeiros.
+:::
+
+
+```{r, eval=TRUE, echo=FALSE, out.width = "960px"}
+knitr::include_app("https://pedro-rafael.shinyapps.io/covid-19-brasil-estados/", height = "600px")
+```
+
+## Dados atualizados por regiões do Brasil
+
+Assim como a tabela apresentada na seção anterior, o gráfico de barras apresentado nessa seção também tem suas informações atualizadas automaticamente com base na mesma **API**, em que as informações são dispostas pelas regiões do Brasil:
+
+   - **Região Norte**: composta por 7 (sete) estados: AM, RR, AP, PA, TO, RO e AC;
+
+   - **Região Nordeste**: composta por 9 (nove) estados: MA, PI, CE, RN, PE, PB, SE, AL e BA;
+
+   - **Região Centro-Oeste**: composta por 3 (três) estados mais o Distrito Federal: MT, MS, GO e DF;
+
+   - **Região Sudeste** composta por 4 (quatro) estados: SP, RJ, ES e MG;
+
+   - **Região Sul**: composta por 3 (três) estados: PR, RS e SC.
+
+O gráfico é interativo, permitindo que sua composição considere três grupos de informações, sendo eles:
+
+   - **Casos**: número de casos confirmados de coronavírus por regiões do Brasil;
+
+   - **Óbitos**: número de óbitos registrados por coronavírus por regiões do Brasil;
+
+   - **Taxa de Letalidade**: percentual de letalidade por coronavírus pelas regiões do Brasil; 
+
+```{r, eval=TRUE, echo=FALSE, out.width = "970px"}
+knitr::include_app("https://pedro-rafael.shinyapps.io/bar_plot_covid_19/", height = "600px")
+```
+
+## Covid-19 por Municípios do Brasil
+
+Aqui apresentarei uma aplicação com os dados de Covid-19 por municípios brasileiros. Essa tabela é atualizada utilizando a **API** fornecida por [**Brasil.io**](https://brasil.io/home/) e assim como as demais aplicações, também é atualizada automaticamente. Se você estiver curioso como essas informações são obtidas, leia a citação abaixo e se mesmo assim não ficar claro, leia o [**manifesto**](https://brasil.io/manifesto/) do site [**Brasil.io**](https://brasil.io/home/). Tratam-se de esforços colaborativos para fazer valer a [**Lei de acesso à informação**](http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Lei/L12527.htm).
+
+
+> ***"Graças a uma força-tarefa de 40 voluntários que, diariamente, compilam boletins epidemiológicos das 27 Secretarias Estaduais de Saúde, disponibilizamos uma base de dados com a série histórica de casos e óbitos confirmados por município. Embora essenciais para o planejamento de políticas de contenção do novo coronavírus, os dados municipais não têm sido divulgados pelo Ministério da Saúde. Ainda como parte desse esforço contínuo de fornecer dados úteis relacionados à pandemia, disponibilizamos outras bases estruturadas, como população dos municípios afetados, óbitos suspeitos registrados em cartório etc."***
+> --- [**Brasil.io**](https://brasil.io/home/).
+
+
+A tabela abaixo permitirá que você acesse informações sobre o avanço do Covid-19 em seu município, caso haja ao menos uma notificação. Você encontrará o número de casos notificados, número de mortes, população estimada, número de casos por 100 mil habitantes, taxa de mortalidade e a data da última atualização. Selecione o estado de interesse e no campo **Procurar**, escreva o nome do município.
+
+```{r, eval=TRUE, echo=FALSE, out.width = "970px"}
+knitr::include_app("https://pedro-rafael.shinyapps.io/tabela_municipios/", height = "600px")
+```
+
+## Visualizando tudo em um único lugar
+
+Para facilitar a visualização das estatísticas, criei um [**painel de controle**](https://pedro-rafael.shinyapps.io/shinydashboard/) (um [**dashboard**](https://pedro-rafael.shinyapps.io/shinydashboard/)) que concentram todas as estatísticas dessa postagem. Qualquer outra nova informação a respeito do Covid-19 no Brasil será introduzida nesse dashboard. Você poderá navegar pelas abas laterais e escolher as informações que deseja visualizar. Clique em algum dos links dessa seção para visualizar o [**dashboard**](https://pedro-rafael.shinyapps.io/shinydashboard/) de forma ampliada e em uma nova aba do seu navegador. 
+
+Assim como esse site, o [**dashboard**](https://pedro-rafael.shinyapps.io/shinydashboard/) poderá ser melhor visualizado por uma tela de um computador. Caso esteja visualizando por um smarthopne ou tablet de tela pequena, olhar na horizontal poderá melhorar um pouco a visualização das informações.
+
+
+```{r, eval=TRUE, echo=FALSE, out.width = "970px"}
+knitr::include_app("https://pedro-rafael.shinyapps.io/shinydashboard/", height = "600px")
+```
+
+

@@ -1,0 +1,256 @@
+---
+title: Workshop Paraibano de Estatística - 2020
+author: Prof. Pedro Rafael D. Marinho
+date: '2020-06-12'
+slug: workshop-paraibano-de-estatística-2020
+categories:
+  - Programação
+tags:
+  - R
+description: 'Uso de Funcionais em R: evitando loops e seus benefícios'
+featured_image: '/images/florest_01.jpg'
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
+---
+
+<script src="2020-06-12-workshop-paraibano-de-estatística-2020.pt_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="uso-de-funcionais-em-r-evitando-loops-e-seus-benefícios" class="section level2">
+<h2>Uso de funcionais em R: evitando loops e seus benefícios</h2>
+<p>Esse ano tive o prazer de ser convidado para apresentar o seminário intitulado <strong>Uso de funcionais em R: evitando loops e seus benefícios</strong> no <strong>Workshop Paraibano de Estatística</strong>, evento este organizado pela Universidade Federal da Paraíba - UFPB, Universidade Fedral de Campina Grande - UFCG e Universidade Estadual da Paraíba - UEPB, em comemoração ao dia do estatístico, 29 de maio. O site oficial do evento poderá ser acessado clicando <a href="https://sites.google.com/view/workshopparaibano/p%C3%A1gina-inicial"><strong>aqui</strong></a>.</p>
+<p>Nesse seminário, apresentei os benefícios de nos aproximarmos do <a href="https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_funcional"><strong>paradigma de programação funcional</strong></a> ao implementarmos nossos códigos em <a href="https://www.r-project.org/"><strong>R</strong></a>.</p>
+<p>R não é uma linguagem puramente funcional, sendo uma linguagem de programação multiparadigma, em que é possível também programar utilizando o <a href="https://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos"><strong>paradigma de orientação à objeto</strong></a>, em especial usando o sistema <a href="https://prdm0.github.io/aulas_computacional/r-miscel%C3%A2nea-e-t%C3%B3picos-avan%C3%A7ados.html#sistema-s3"><strong>S3</strong></a> de orientação à objeto, em que os métodos são despachados por meio de uma função genérica, com base na estrutura de dados do primeiro argumento dessa função. Para maiores detalhes, você poderá ler a seção <strong>S3</strong> do meu livro de <strong>Estatística Computacional</strong> disponível <a href="https://prdm0.github.io/aulas_computacional/index.html"><strong>aqui</strong></a>, livro este que utilizo para ministrar a disciplina de estatística computacional aos alunos do bacharelado em estatística da UFPB.</p>
+<p>Em R, funcional é toda função que recebe como argumento uma outra função e retorna um vetor<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Muitos desses funcionais são úteis para reproduzir funções, o que poderá ser útil no processo de substituição de instruções de loops como <code>for</code>, <code>while</code> e <code>repeat</code>, disponíveis em R. Entre os principais benefícios do uso de funcionais em R, destaco:</p>
+<ol style="list-style-type: decimal">
+<li>O seu código ficará mais limpo e elegante;</li>
+<li>O seu código será mais fácil de manter e debugar;</li>
+<li>Utilizando funcionais construídos de forma eficiente, por exemplo, àqueles implementados no <strong>r-base</strong> ou por pacotes extras disponíveis no CRAN e/ou GitHub como <a href="https://purrr.tidyverse.org/"><strong>purrr</strong></a>, <a href="https://github.com/DavisVaughan/furrr"><strong>furrr</strong></a>, <strong>parallel</strong> (disponível, por padrão, em R com versão <span class="math inline">\(\geq 2.14.0\)</span>), <a href="https://cran.r-project.org/web/packages/pbmcapply/index.html"><strong>pbmcapply</strong></a>, entre outros, você levará suas simulações à outro patamar de eficência computacional;</li>
+<li>Com poucas alterações no seu código, você poderá paralelizar suas simulações, podendo assim fazer uso de todos os cores do seu processador, o que normalmente trará benefícios.</li>
+</ol>
+<p>Você poderá companhar a apresentação utilizada no seminário pelo seu navegador clicando <a href="https://prdm0.github.io/palestra_wpbest_2020/#1"><strong>aqui</strong></a>. No vídeo, disposto adiante, apresento com um pouco mais de detalhes os benefícios de aproximar-se da programação funcional em R, em particular discuto a troca, se possível, de estruturas de loops por um funcional conveniente. Nele, implemento um problema típico da estatística que é o desenvolvimento de simulações de Monte-Carlo - MC e mostro como é fácil implementar uma simulação de MC de forma serial e paralela, em sistemas Linux/Mac e Windows.</p>
+<p>Após o vídeo, estão os dois códigos implementados durante o seminário, em que o primeiro faz uso de paralelismo via FORK, disponíveis em sistemas Unix-like - <strong>*nix</strong> (Linux e Unix) e o segundo disponíveis em <strong>*nix</strong> e em Windows. São discutidas as vantagens e desvantagens de cada um dos sistemas. Divirta-se:</p>
+<p>{{% youtube "rqjII_sA6V8" %}}
+<strong>Seminário apresentado no Workshop Paraibano de Estatística - 2020.</strong></p>
+<p>Abaixo estão os dois códigos implementados no vídeo, em que o primeiro faz uso de paralelismo via FORK, disponíveis em sistemas <a href="https://en.wikipedia.org/wiki/Unix-like"><strong>Unix-like</strong> - <strong>*nix</strong></a> (Linux e Unix) e o segundo disponíveis em <strong>*nix</strong> e em Windows. São discutidas as vantagens e desvantagens de cada um dos sistemas.</p>
+<div id="código-para-paralelização-em-sistemas-linuxmac-paralelizando-via-fork" class="section level3">
+<h3>Código para paralelização em sistemas Linux/Mac (paralelizando via FORK):</h3>
+<pre class="r"><code>library(numDeriv)
+library(parallel)
+library(pbmcapply)
+library(magrittr)
+
+
+# Usando conceito de closures para implementar a função exp_g() de forma
+# genérica.
+
+exp_g &lt;- function(G, ...) {
+  function(x, ..., a) {
+    grad(fun = function(x) G(x, ...) ^ a, x = x)
+  }
+}
+
+cdf_weibull &lt;- function(x, alpha, beta, ...) 
+  pweibull(q = x, shape = alpha, scale= beta, ...)
+
+# Construindo a função densidade de probabilidade da Exp-Weibull.
+pdf_exp_weibull &lt;- exp_g(G = cdf_weibull)
+
+pdf_exp_weibull(x = 1.2, alpha = 1, beta = 2, a = 1)
+
+
+# Iniciando a implementação da simulação de MC ----------------------------
+
+
+mc &lt;- function(M = 1e3L, n = 100L, par_true = c(2, 3, 1), cl = cl) {
+  
+  alpha &lt;- par_true[1L]
+  beta &lt;- par_true[2L]
+  a &lt;- par_true[3L]
+  
+  starts &lt;- rep(1, length(par_true))
+  
+  # Implementando a função log-verossimilhança da Exp-Weibull:
+  log_lik &lt;- function(par, x) {
+    alpha &lt;- par[1L]
+    beta &lt;- par[2L]
+    a &lt;- par[3L]
+    -sum(log(pdf_exp_weibull(x = x, alpha = alpha, beta = beta, a = a)))
+  }
+  
+  myoptim &lt;- function(...)
+    tryCatch(
+      expr = optim(...),
+      error = function(e)
+        NA
+    )
+  
+  # Uma única iteração de Monte-Carlo - MC:
+  mc_one_step &lt;- function(i){
+    
+    repeat{
+      cenario &lt;- rweibull(n = n, shape = alpha, scale = beta)
+      result &lt;- myoptim(fn = log_lik, par = starts, x = cenario)
+      
+      if(!is.na(result) &amp;&amp; result$convergence == 0)
+        break
+    }
+    
+    result$par # Estimativas de máxima verossimilhança.
+  }
+  
+  result_mc &lt;-
+    pbmclapply(X = 1L:M, FUN = mc_one_step, mc.cores = detectCores()) %&gt;%
+    unlist %&gt;% 
+    matrix(ncol = length(par_true), nrow = M, byrow = TRUE)  
+  
+  colnames(result_mc) &lt;- c(&quot;alpha&quot;, &quot;beta&quot;, &quot;a&quot;)
+  
+  mean_mc &lt;- apply(X = result_mc, MARGIN = 2L, FUN = mean) # Média das estimativas 
+  
+  bias &lt;- mean_mc - par_true # Víes
+  
+  list(result_mc = result_mc, mean_mc = mean_mc, bias = bias)
+  
+}
+
+RNGkind(kind = &quot;L&#39;Ecuyer-CMRG&quot;)
+set.seed(0)
+mc.reset.stream()
+
+system.time(result &lt;- mc(M = 1000L, n = 100L, par_true = c(2, 3, 1), cl = cl))</code></pre>
+</div>
+<div id="código-para-paralelização-em-sistema-windows-paralelizando-via-psock" class="section level3">
+<h3>Código para paralelização em sistema Windows (paralelizando via PSOCK):</h3>
+<pre class="r"><code>library(numDeriv)
+library(parallel)
+library(pbapply)
+library(magrittr)
+
+# Usando o conceito de closures na função exp_G().
+exp_g &lt;- function(G, ...) {
+  # Definindo uma função anônima. Funções anônimas são muito úteis na programação funcional.
+  function(x, ..., a) {
+    # Utilizano o operador dot-dot-dot.
+    numDeriv::grad(
+      func = function(x)
+        G(x = x, ...) ^ a,
+      x = x
+    )
+  }
+}
+
+# pdf() é a função Weibull de parâmetros alpha e beta.
+cdf_weibull &lt;-
+  function(x, alpha, beta, ...)
+    pweibull(q = x,
+             shape = alpha,
+             scale = beta,
+             ...)
+
+pdf_exp_weibull &lt;- exp_g(G = cdf_weibull)
+
+mc &lt;-
+  function(M = 1e4L,
+           n = 250L,
+           par_true = c(2, 3, 1)) {
+    alpha &lt;- par_true[1L]
+    beta &lt;- par_true[2L]
+    a &lt;- par_true[3L]
+    
+    starts &lt;- rep(1, length(par_true))
+    
+    
+    # Implementando a função de verossimilhança da weibull
+    log_lik &lt;- function(par, x) {
+      alpha &lt;- par[1L]
+      beta &lt;- par[2L]
+      a &lt;- par[3L]
+      - sum(log(pdf_exp_weibull(
+        x = x,
+        alpha = alpha,
+        beta = beta,
+        a = a
+      )))
+    }
+    
+    # Tratamento de erro
+    myoptim &lt;-
+      function(...)
+        tryCatch(
+          exp = optim(...),
+          error = function(e)
+            NA
+        )
+    
+    # Uma única iteração de Monte-Carlo - MC:
+    mc_one_step &lt;- function(i) {
+      # Não sei quantas vezes o repeat irá executar.
+      repeat {
+        cenario &lt;- rweibull(n = n,
+                            shape = alpha,
+                            scale = beta)
+        result &lt;- myoptim(fn = log_lik, par = starts, x = cenario)
+        
+        
+        if (!is.na(result) &amp;&amp; result$convergence == 0)
+          break
+      } # Encontrando uma amostra adequada.
+      
+      # Retornando as estimativas de máxima verossimilhança.
+      result$par
+    }
+    
+    results_mc &lt;-
+      pblapply(X = 1L:M, FUN = mc_one_step, cl = cl) %&gt;%
+      unlist %&gt;%
+      matrix(nrow = M,
+             ncol = length(par_true),
+             byrow = TRUE) 
+    
+    colnames(results_mc) &lt;- c(&quot;alpha&quot;, &quot;beta&quot;, &quot;a&quot;)
+    
+    # Obtendo a média das estimativas de máxima verossimilhança por parâmetro:
+    mean_est &lt;- apply(X = results_mc, MARGIN = 2L, FUN = mean)
+    
+    bias &lt;- mean_est - par_true
+    
+    list(results_mc = results_mc,
+         mean_est = mean_est,
+         bias = bias)
+    
+  }
+
+cores &lt;- getOption(&quot;mc.cores&quot;, 8L) 
+
+# Criando um cluster PSOCK:
+cl &lt;- makeCluster(cores, type = &quot;PSOCK&quot;)
+
+clusterExport(
+  cl = cl,
+  varlist = c(&quot;mc&quot;, &quot;exp_g&quot;, &quot;cdf_weibull&quot;, &quot;pdf_exp_weibull&quot;),
+  envir = environment()
+)
+
+clusterEvalQ(cl = cl, expr = library(numDeriv))
+
+# Garantindo reprodutibilidade:
+clusterSetRNGStream(cl = cl, iseed = 1)
+
+system.time(result &lt;-
+              mc(
+                M = 1000L,
+                n = 50L,
+                par_true = c(2, 3, 1)
+              ))
+stopCluster(cl)</code></pre>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Lembre-se que em R listas também são vetores, porém não atômicos, ou seja, são vetores heterogêneos. Por exemplo, <code>is.vector(list(1))</code> retornará <code>TRUE</code><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

@@ -1,0 +1,43 @@
+title: "Prof. Pedro Rafael"
+baseURL: "https://prdm0.rbind.io"
+languageCode: pt
+theme: gohugo-theme-ananke
+resourceDir: ../resources
+defaultContentLanguage: pt
+SectionPagesMenu: main
+Paginate: 3
+googleAnalytics: "UA-169205112-1"
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+enableRobotsTXT: yes
+hasCJKLanguage: yes
+author: 'Prof. Pedro Rafael'
+languages:
+  pt:
+    contentDir: content/pt
+    title: Prof. Pedro Rafael
+    weight: 1
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+params:
+  background_color_class: bg-black
+  description: Aqui você encontrará um pouco do meu trabalho ...
+  facebook: ''
+  favicon: '/images/bullterrierr.png'
+  featured_image: /images/me_04.jpg
+  github: 'https://github.com/prdm0'
+  gitlab: ''
+  instagram: 'https://www.instagram.com/prdm.0/'
+  linkedin: ''
+  mastodon: ''
+  recent_posts_number: 2
+  rss: ''
+  site_logo: /images/logo_04.svg
+  slack: ''
+  stackoverflow: ''
+  twitter: 'https://twitter.com/Pedro_Rafael1'
+  youtube: ''
+  show_reading_time: yes
+  custom_css: ['css/custom.css']
+  toc: yes
